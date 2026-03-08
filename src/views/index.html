@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="../../public/style/style.css">
+</head>
+<body>
+    <h1>Cronômetro</h1>
+    <div class="stopwatch"></div>
+    <nav>
+        <button id="start" onclick="cronometro.iniciarTempo()">Iniciar</button>
+        <button id="stop" onclick="cronometro.pararTempo()">Parar</button>
+        <button id="lap" onclick="cronometro.darVolta()">Volta</button>
+        <button id="reset" onclick="cronometro.zerarTempo()">Zerar</button>
+    </nav>
+    <table class="results" hidden>
+        <thead>
+            <tr>
+                <th>Volta</th>
+                <th>Tempo da volta</th>
+                <th>Tempo total</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+<script src="../../public/js/index.js"></script>
+</html>
